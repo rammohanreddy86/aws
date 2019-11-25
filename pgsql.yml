@@ -144,21 +144,21 @@ Outputs:
       - ''
       - - 'jdbc:postgresql://'
         - !GetAtt 
-          - MyDB
+          - MyDataBase
           - Endpoint.Address
         - ':'
         - !GetAtt 
-          - MyDB
+          - MyDataBase
           - Endpoint.Port
         - /
         - !Ref MyDBName
   DBAddress:
     Description: address of database endpoint
     Value: !GetAtt 
-      - MyDB
+      - MyDataBase
       - Endpoint.Address
   DBPort:
     Description: database endpoint port
     Value: !GetAtt 
-      - MyDB
+      - MyDataBase
       - Endpoint.Port
