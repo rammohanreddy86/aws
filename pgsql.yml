@@ -1,8 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-  AWS CloudFormation Template for PostgreSQL, creates a
-  highly-available RDS DBInstance with cloudwatch alarms 
-  which indicate the health of the database **WARNING**  
+  AWS CloudFormation Template for PostgreSQL RDS instance  
 Parameters:
   VpcId:
     Type: 'AWS::EC2::VPC::Id'
